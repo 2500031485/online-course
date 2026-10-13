@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>LearnHub</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Learn New Skills Online</h2>
+        <p>Explore our courses and build your future.</p>
+        <a href="#courses" class="btn">Explore Courses</a>
+    </section>
+
+    <section class="courses" id="courses">
+        <h2>Our Courses</h2>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS and JavaScript.</p>
+                <p><strong>Duration:</strong> 8 Weeks</p>
+                <button onclick="enroll('Web Development')">
+                    Enroll Now
+                </button>
+            </div>
+
+            <div class="course-card">
+                <h3>Python Programming</h3>
+                <p>Learn Python from the basics.</p>
+                <p><strong>Duration:</strong> 6 Weeks</p>
+                <button onclick="enroll('Python Programming')">
+                    Enroll Now
+                </button>
+            </div>
+
+            <div class="course-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Explore AI and Machine Learning.</p>
+                <p><strong>Duration:</strong> 10 Weeks</p>
+                <button onclick="enroll('Artificial Intelligence')">
+                    Enroll Now
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 LearnHub Online Courses</p>
+    </footer>
+
+    <script>
+        function enroll(course) {
+            alert("You have successfully enrolled in " + course + "!");
+        }
+    </script>
+
+</body>
+</html>
